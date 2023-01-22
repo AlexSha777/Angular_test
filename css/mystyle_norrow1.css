@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.col-1 {width: 75%;}
+.col-2 {width: 75%;}
+.col-3 {width: 75%;}
+.col-4 {width: 75%;}
+.col-5 {width: 75%;}
+.col-6 {width: 75%;}
+.col-7 {width: 75%;}
+.col-8 {width: 75%;}
+.col-9 {width: 75%;}
+.col-10 {width: 75%;}
+.col-11 {width: 75%;}
+.col-12 {width: 75%;}
+
+[class*="col-"] {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+}
+
+.header {
+  color: #4560A4;
+  font-family: Verdana;
+  font-size: 400%;
+  background-color: #D4E0FD;
+  opacity: 0.7;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(58, 89, 163, 0.2), 0 6px 20px 0 rgba(58, 89, 163, 0.19);
+  transition: 0.75s;
+}
+
+.header:hover {
+  opacity: 1;
+}
+
+@keyframes frame_shade {
+  50% {box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;}
+  100% {box-shadow: 0 4px 8px 0 rgba(58, 89, 163, 0.2), 0 6px 20px 0 rgba(58, 89, 163, 0.2);}
+}
+
+body {
+  background-image: url("krasivo.png");
+  background-repeat: no-repeat;
+  background-size: 1360px 765px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+img.my_photo {
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.personal, .aducation, .facts {
+  color: #4560A4;
+  background-color: #D4E0FD;
+  opacity: 0.95;
+  font-size: 200%;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  margin: 5px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(58, 89, 163, 0.2), 0 6px 20px 0 rgba(58, 89, 163, 0.2);
+  text-align: center;
+  transition: 0.75s;
+  animation-name: frame_shade;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.facts{
+  margin-right: 0px;
+
+}
+.facts_text_1, .facts_text_3{
+  color:#4560A4;
+  transition: 0.75s;
+}
+
+.facts_text_2 {
+  font-size: 90%;
+  color:#4560A4;
+  transition: 0.75s;
+}
+
+.gomel_med:hover, .minsk_econ:hover, .prog:hover {
+  opacity: 1;
+  font-size: 115%;
+}
+
+.facts_text_1:hover, .facts_text_3:hover {
+  opacity: 1;
+  font-size: 110%;
+}
+
+.facts_text_2:hover {
+  opacity: 1;
+  font-size: 103%;
+}
+
+.personal_text {
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: 110%;
+  transition: 0.75s;
+}
+
+.personal_text:hover {
+  opacity: 1;
+  font-size: 115%;
+}
+
+.gomel_med {
+  background-image: url("gogmu_sx.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: 0.75s;
+}
+
+.minsk_econ {
+  background-image: url("bseu_sx.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: 0.75s;
+}
+
+.prog {
+  background-image: url("prog_sx.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: 0.75s;
+}
+
+.gomel_med_text, .minsk_econ_text, .prog_text {
+  color: white;
+  text-shadow: 1px 1px 2px #4560A4, 0 0 25px #4560A4, 0 0 5px #4560A4;
+}
